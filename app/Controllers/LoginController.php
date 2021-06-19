@@ -28,7 +28,7 @@ class LoginController extends BaseController
 			];
 
 			$session->set($newdata);
-			return redirect() ->to('/user?id=2');
+			return redirect() ->to('/home');
 		} else{
 
 			echo "datos incorrectos";
