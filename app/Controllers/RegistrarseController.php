@@ -6,7 +6,7 @@ use App\Models\UserModel;
 
 
 
-class RegisterController extends BaseController{
+class RegistrarseController extends BaseController{
 
     public function index (){
         echo view('layouts/header');
