@@ -16,7 +16,7 @@ class LoginController extends BaseController
 		$request = \Config\Services::request();
 		$userModel = new UserModel();
 		$session = \Config\Services::session();
-		$email = $request-> getPost('username');
+		$username = $request-> getPost('username');
 		$password = $request->getPost('password');
 		$user = $userModel->loginUser(username, $password);
 		if(count($user)> 0){
